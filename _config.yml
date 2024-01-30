@@ -1,0 +1,18 @@
+title: My blog
+description: >- 
+  I always try to learn things around graphics, IT, math and physics.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://philae-ael.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  philae-ael
+
+remote_theme: jekyll/minima
+plugins:
+- jekyll-remote-theme
+- jekyll-feed
+- jekyll-seo-tag
+
+minima:
+  skin: auto
+  social_links:
+   - { platform: github,  user_url: "https://github.com/philae-ael/" }
+   - { platform: bluesky, user_url: "https://bsky.app/profile/leathe.dev" }
