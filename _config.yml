@@ -1,16 +1,28 @@
 title: My blog
 description: >- 
   I always try to learn things around graphics, IT, math and physics.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://philae-ael.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  philae-ael
+baseurl: "/"
+url: "https://philae-ael.github.io"
+
+author:
+  name: Leathe
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  math_engine: katex
 
 remote_theme: jekyll/minima
 plugins:
 - jekyll-remote-theme
 - jekyll-feed
 - jekyll-seo-tag
+- jekyll-katex
 
+google_analytics: G-GQ8G5HXWYG
 minima:
   skin: auto
   social_links:
