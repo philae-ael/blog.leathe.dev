@@ -10,5 +10,7 @@ group :jekyll_plugins do
 end
 gem "kramdown-parser-gfm"
 gem "kramdown-math-katex"
+gem "execjs"
+gem "therubyracer"
 gem "rouge"
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
