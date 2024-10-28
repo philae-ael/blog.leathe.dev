@@ -64,6 +64,7 @@ GEM
     jekyll-katex (1.0.0)
       execjs (~> 2.7)
       jekyll (>= 3.6, < 5.0)
+    jekyll-mermaid (1.0.0)
     jekyll-remote-theme (0.4.3)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
@@ -145,6 +146,7 @@ DEPENDENCIES
   jekyll
   jekyll-feed
   jekyll-katex
+  jekyll-mermaid
   jekyll-remote-theme
   jekyll-seo-tag
   kramdown-math-katex

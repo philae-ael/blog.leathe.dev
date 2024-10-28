@@ -22,6 +22,19 @@ plugins:
 - jekyll-seo-tag
 - jekyll-katex
 
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:path
+
+feed:
+  path: "/feed.xml"
+  collections:
+    articles:
+      path: "/feed.xml"
+    posts: # workaround, we can't remove this collection
+      path: "_feed.xml"
+
 google_analytics: G-GQ8G5HXWYG
 minima:
   skin: auto

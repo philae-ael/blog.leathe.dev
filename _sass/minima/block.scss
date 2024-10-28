@@ -1,0 +1,27 @@
+blockquote.info {
+    border-color: #CCC;
+    background-color: #212121;
+    color: #8b949e;
+    padding: 10px;
+    font-style: normal;
+}
+
+blockquote.info h1,
+blockquote.info h2,
+blockquote.info h3,
+blockquote.info h4,
+blockquote.info h5,
+blockquote.info h6 {
+    color: #CCC;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+blockquote.info p {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+pre:has(code.language-mermaid[data-processed="true"]) {
+    text-align: center;
+}
