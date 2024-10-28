@@ -35,7 +35,6 @@ feed:
     posts: # workaround, we can't remove this collection
       path: "_feed.xml"
 
-google_analytics: G-GQ8G5HXWYG
 minima:
   skin: auto
   social_links:
