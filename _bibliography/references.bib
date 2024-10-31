@@ -1,0 +1,832 @@
+@article{acarSchedulingParallelPrograms,
+  title = {Scheduling {{Parallel Programs}} by {{Work Stealing}} with {{Private Deques}}},
+  author = {Acar, Umut A and Chargueraud, Arthur and Rainey, Mike},
+  abstract = {Work stealing has proven to be an effective method for scheduling fine-grained parallel programs on multicore computers. To achieve high performance, work stealing distributes tasks between concurrent queues, called deques, assigned to each processor. Each processor operates on its deque locally except when performing load balancing via steals. Unfortunately, concurrent deques suffer from two limitations: 1) local deque operations require expensive memory fences in modern weak-memory architectures, 2) they can be very difficult to extend to support various optimizations and flexible forms of task distribution strategies needed many applications, e.g., those that do not fit nicely into the divide-and-conquer, nested data parallel paradigm.},
+  langid = {english}
+}
+
+@article{amanatidesFastVoxelTraversal,
+  title = {A {{Fast Voxel Traversal Algorithm}} for {{Ray Tracing}}},
+  author = {Amanatides, John and Woo, Andrew},
+  abstract = {A fast and simple voxel traversal algorithm through a 3D space partition is introduced. Going from one voxel to its neighbour requires only two floating point comparisons and one floating point addition. Also, multiple ray intersections with objects that are in more than one voxel are eliminated.},
+  langid = {english}
+}
+
+@inproceedings{arvoRoleFunctionalAnalysis1995,
+  title = {The {{Role}} of {{Functional Analysis}} in {{Global Illumination}}},
+  booktitle = {Rendering {{Techniques}} ’95},
+  author = {Arvo, James},
+  editor = {Hanrahan, Patrick M. and Purgathofer, Werner},
+  date = {1995},
+  pages = {115--126},
+  publisher = {Springer},
+  location = {Vienna},
+  doi = {10.1007/978-3-7091-9430-0_12},
+  abstract = {The problem of global illumination is virtually synonymous with solving the rendering equation. Although a great deal of research has been directed toward Monte Carlo and finite element methods for solving the rendering equation, little is known about the continuous equation beyond the existence and uniqueness of its solution. The continuous problem may be posed in terms of linear operators acting on infinite-dimensional function spaces. Such operators are fundamentally different from their finite-dimensional counterparts, and are properly studied using the methods of functional analysis. This paper summarizes some of the basic concepts of functional analysis and shows how these concepts may be applied to a linear operator formulation of the rendering equation. In particular, operator norms are obtained from thermodynamic principles, and a number of common function spaces are shown to be closed under global illumination. Finally, several fundamental operators that arise in global illumination are shown to be nearly finite-dimensional in that they can be uniformly approximated by matrices.},
+  isbn = {978-3-7091-9430-0},
+  langid = {english}
+}
+
+@inproceedings{baerentzenSinglepassWireframeRendering2006,
+  title = {Single-Pass Wireframe Rendering},
+  booktitle = {{{ACM SIGGRAPH}} 2006 {{Sketches}} on   - {{SIGGRAPH}} '06},
+  author = {Bærentzen, Andreas and Nielsen, Steen L. and Gjøl, Mikkel and Larsen, Bent D. and Christensen, Niels Jørgen},
+  date = {2006},
+  pages = {149},
+  publisher = {ACM Press},
+  location = {Boston, Massachusetts},
+  doi = {10.1145/1179849.1180035},
+  url = {http://portal.acm.org/citation.cfm?doid=1179849.1180035},
+  urldate = {2024-05-01},
+  eventtitle = {{{ACM SIGGRAPH}} 2006 {{Sketches}}},
+  isbn = {978-1-59593-364-5},
+  langid = {english}
+}
+
+@online{bosRustAtomicsLocks,
+  title = {Rust {{Atomics}} and {{Locks}} by {{Mara Bos}}},
+  author = {Bos, Mara},
+  url = {https://marabos.nl/atomics/},
+  urldate = {2024-05-27},
+  abstract = {Low-level Concurrency in Practice. This practical book helps Rust programmers of all levels gain a clear understanding of low-level concurrency. You'll learn everything about atomics and …},
+  langid = {english}
+}
+
+@inreference{BoundingVolumeHierarchy2022,
+  title = {Bounding Volume Hierarchy},
+  booktitle = {Wikipedia},
+  date = {2022-06-24T10:09:34Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Bounding_volume_hierarchy&oldid=1094757939},
+  urldate = {2022-11-12},
+  abstract = {A bounding volume hierarchy (BVH) is a tree structure on a set of geometric objects. All geometric objects, that form the leaf nodes of the tree, are wrapped in bounding volumes. These nodes are then grouped as small sets and enclosed within larger bounding volumes. These, in turn, are also grouped and enclosed within other larger bounding volumes in a recursive fashion, eventually resulting in a tree structure with a single bounding volume at the top of the tree. Bounding volume hierarchies are used to support several operations on sets of geometric objects efficiently, such as in collision detection and ray tracing. Although wrapping objects in bounding volumes and performing collision tests on them before testing the object geometry itself simplifies the tests and can result in significant performance improvements, the same number of pairwise tests between bounding volumes are still being performed. By arranging the bounding volumes into a bounding volume hierarchy, the time complexity (the number of tests performed) can be reduced to logarithmic in the number of objects. With such a hierarchy in place, during collision testing, children volumes do not have to be examined if their parent volumes are not intersected (for example, if the bounding volumes of two bumper cars do not intersect, the bounding volumes of the bumpers themselves would not have to be checked for collision).},
+  langid = {english},
+  annotation = {Page Version ID: 1094757939}
+}
+
+@book{brassAdvancedDataStructures2008,
+  title = {Advanced {{Data Structures}}},
+  author = {Brass, Peter},
+  date = {2008},
+  publisher = {Cambridge University Press},
+  location = {Leiden},
+  abstract = {The first book to show data structures as a crucial algorithmic topic, not trivial material to illustrate object-orientation},
+  isbn = {978-0-511-43685-7},
+  langid = {english},
+  annotation = {OCLC: 437234507}
+}
+
+@online{BuildingOrthonormalBasis,
+  title = {Building an {{Orthonormal Basis}}, {{Revisited}} ({{JCGT}})},
+  url = {https://jcgt.org/published/0006/01/01/},
+  urldate = {2024-08-06}
+}
+
+@inproceedings{celesTextureBasedWireframeRendering2010,
+  title = {Texture-{{Based Wireframe Rendering}}},
+  author = {Celes, Waldemar and Abraham, Frederico},
+  date = {2010-10-03},
+  pages = {149--155},
+  doi = {10.1109/SIBGRAPI.2010.28},
+  abstract = {This paper revisits the problem of wireframe rendering, which, at first, appears to be an easily solved problem. However, the conventional solution is inefficient and does not result in high-quality images. Recently, graphics hardware programming has been employed to achieve high-quality solid line rendering. In this paper, we present a simpler and faster technique for wireframe rendering based on texture mapping. Our technique does not require (but can benefit from) graphics hardware programming and thus can be easily integrated to existing rendering engines, while resulting in accurate, high-quality, antialiased, and still versatile, wireframe drawing.}
+}
+
+@inproceedings{clavetParticlebasedViscoelasticFluid2005,
+  title = {Particle-Based Viscoelastic Fluid Simulation},
+  booktitle = {Proceedings of the 2005 {{ACM SIGGRAPH}}/{{Eurographics}} Symposium on {{Computer}} Animation},
+  author = {Clavet, Simon and Beaudoin, Philippe and Poulin, Pierre},
+  date = {2005-07-29},
+  pages = {219--228},
+  publisher = {ACM},
+  location = {Los Angeles California},
+  doi = {10.1145/1073368.1073400},
+  url = {https://dl.acm.org/doi/10.1145/1073368.1073400},
+  urldate = {2024-05-26},
+  abstract = {We present a new particle-based method for viscoelastic fluid simulation. We achieve realistic small-scale behavior of substances such as paint or mud as they splash on moving objects. Incompressibility and particle anti-clustering are enforced with a double density relaxation procedure which updates particle positions according to two opposing pressure terms. From this process surface tension effects emerge, enabling drop and filament formation. Elastic and non-linear plastic effects are obtained by adding springs with varying rest length between particles. We also extend the technique to handle interaction between fluid and dynamic objects. Various simulation scenarios are presented including rain drops, fountains, clay manipulation, and floating objects. The method is robust and stable, and can animate splashing behavior at interactive framerates.},
+  eventtitle = {{{SCA05}}: {{Symposium}} on {{Computer Animation}}},
+  isbn = {978-1-59593-198-6},
+  langid = {english}
+}
+
+@book{cormenIntroductionAlgorithms2022,
+  title = {Introduction to Algorithms},
+  author = {Cormen, Thomas H. and Leiserson, Charles Eric and Rivest, Ronald Linn and Stein, Clifford},
+  date = {2022},
+  edition = {Fourth edition},
+  publisher = {The MIT Press},
+  location = {Cambridge, Massachusetts London, England},
+  abstract = {"The leading introductory textbook and reference on algorithms"--},
+  isbn = {978-0-262-04630-5},
+  langid = {english},
+  pagetotal = {1291}
+}
+
+@software{CplusplusDraft2024,
+  title = {Cplusplus/Draft},
+  date = {2024-05-26T05:12:06Z},
+  origdate = {2011-08-16T14:43:17Z},
+  url = {https://github.com/cplusplus/draft},
+  urldate = {2024-05-27},
+  abstract = {C++ standards drafts},
+  organization = {ISO C++ Standards Committee}
+}
+
+@book{debergComputationalGeometryAlgorithms2008,
+  title = {Computational {{Geometry}}: {{Algorithms}} and {{Applications}}},
+  shorttitle = {Computational {{Geometry}}},
+  author = {De Berg, Mark and Cheong, Otfried and Van Kreveld, Marc and Overmars, Mark},
+  date = {2008},
+  publisher = {Springer Berlin Heidelberg},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/978-3-540-77974-2},
+  url = {http://link.springer.com/10.1007/978-3-540-77974-2},
+  urldate = {2023-10-10},
+  isbn = {978-3-540-77973-5 978-3-540-77974-2},
+  langid = {english}
+}
+
+@online{DesigningBuildingParallel,
+  title = {Designing and {{Building Parallel Programs}}},
+  url = {https://www.mcs.anl.gov/~itf/dbpp/text/book.html},
+  urldate = {2024-08-07}
+}
+
+@online{DiscreteDifferentialGeometry,
+  title = {Discrete {{Differential Geometry}}},
+  url = {https://brickisland.net/ddg-web/},
+  urldate = {2024-06-04}
+}
+
+@article{EmbreeHighPerformance,
+  title = {Embree: {{High Performance Ray Tracing Kernels}} 4.3.3}
+}
+
+@inproceedings{faxenEfficientWorkStealing2010,
+  title = {Efficient {{Work Stealing}} for {{Fine Grained Parallelism}}},
+  author = {Faxen, Karl-Filip},
+  date = {2010-09-01},
+  pages = {313--322},
+  doi = {10.1109/ICPP.2010.39},
+  abstract = {This paper deals with improving the performance of fine grain task parallelism. It is often either cumbersome or impossible to increase the grain size of such programs. Increasing core counts exacerbates the problem; a program that appears coarse-grained on eight cores may well look a lot more fine-grained on sixty four. In this paper we present the direct task stack, a novel work stealing algorithm with unusually low overheads, both for creating tasks and for stealing. We compare the performance of our scheduler to Cilk++, the icc implementation of OpenMP 3.0 and the Intel TBB library on an eight core, dual socket Opteron machine. We also analyze the reasons why our techniques achieve consistent speed ups over the other systems ranging from 2-3x on many fine grained workloads to over 50 in extreme cases and show quantitatively how each of the techniques we use contribute to the improved performance.},
+  eventtitle = {Proceedings of the {{International Conference}} on {{Parallel Processing}}}
+}
+
+@inproceedings{faxenEfficientWorkStealing2010a,
+  title = {Efficient {{Work Stealing}} for {{Fine Grained Parallelism}}},
+  booktitle = {2010 39th {{International Conference}} on {{Parallel Processing}}},
+  author = {Faxen, Karl-Filip},
+  date = {2010-09},
+  pages = {313--322},
+  publisher = {IEEE},
+  location = {San Diego, CA, USA},
+  doi = {10.1109/ICPP.2010.39},
+  url = {http://ieeexplore.ieee.org/document/5599176/},
+  urldate = {2024-10-21},
+  abstract = {This paper deals with improving the performance of fine grain task parallelism. It is often either cumbersome or impossible to increase the grain size of such programs. Increasing core counts exacerbates the problem; a program that appears coarse-grained on eight cores may well look a lot more finegrained on sixty four.},
+  eventtitle = {2010 39th {{International Conference}} on {{Parallel Processing}} ({{ICPP}})},
+  isbn = {978-1-4244-7913-9},
+  langid = {english}
+}
+
+@online{FilteringApproachesRealTime,
+  title = {Filtering {{Approaches}} for {{Real-Time Anti-Aliasing}}},
+  url = {https://www.iryoku.com/aacourse/},
+  urldate = {2024-05-04}
+}
+
+@inproceedings{govindarajuHighPerformanceDiscrete2008,
+  title = {High Performance Discrete {{Fourier}} Transforms on Graphics Processors},
+  booktitle = {2008 {{SC}} - {{International Conference}} for {{High Performance Computing}}, {{Networking}}, {{Storage}} and {{Analysis}}},
+  author = {Govindaraju, Naga K. and Lloyd, Brandon and Dotsenko, Yuri and Smith, Burton and Manferdelli, John},
+  date = {2008-11},
+  pages = {1--12},
+  publisher = {IEEE},
+  location = {Austin, TX},
+  doi = {10.1109/SC.2008.5213922},
+  url = {http://ieeexplore.ieee.org/document/5213922/},
+  urldate = {2024-08-26},
+  abstract = {We present novel algorithms for computing discrete Fourier transforms with high performance on GPUs. We present hierarchical, mixed radix FFT algorithms for both power-of-two and non-power-of-two sizes. Our hierarchical FFT algorithms efficiently exploit shared memory on GPUs using a Stockham formulation. We reduce the memory transpose overheads in hierarchical algorithms by combining the transposes into a blockbased multi-FFT algorithm. For non-power-of-two sizes, we use a combination of mixed radix FFTs of small primes and Bluestein’s algorithm. We use modular arithmetic in Bluestein’s algorithm to improve the accuracy. We implemented our algorithms using the NVIDIA CUDA API and compared their performance with NVIDIA’s CUFFT library and an optimized CPU-implementation (Intel’s MKL) on a high-end quad-core CPU. On an NVIDIA GPU, we obtained performance of up to 300 GFlops, with typical performance improvements of 2–4× over CUFFT and 8–40× improvement over MKL for large sizes.},
+  eventtitle = {2008 {{SC}} - {{International Conference}} for {{High Performance Computing}}, {{Networking}}, {{Storage}} and {{Analysis}}},
+  isbn = {978-1-4244-2834-2},
+  langid = {english}
+}
+
+@software{guminWaveFunctionCollapse2016,
+  title = {Wave {{Function Collapse Algorithm}}},
+  author = {Gumin, Maxim},
+  date = {2016-09},
+  origdate = {2016-09-30T11:53:17Z},
+  url = {https://github.com/mxgmn/WaveFunctionCollapse},
+  urldate = {2023-05-05},
+  abstract = {Bitmap \& tilemap generation from a single example with the help of ideas from quantum mechanics},
+  version = {1.0}
+}
+
+@book{hainesRayTracingGems,
+  title = {Ray {{Tracing Gems}}},
+  author = {Haines, Eric},
+  url = {https://link.springer.com/book/10.1007/978-1-4842-4427-2},
+  urldate = {2022-10-22},
+  abstract = {This book is a must-have for anyone serious about rendering in real time. Experts in rendering share their knowledge by explaining everything from nitty-gritty techniques that will improve any ray tracer to mastery of the new capabilities of current and future hardware.},
+  langid = {english}
+}
+
+@article{heitzRealtimePolygonallightShading2016,
+  title = {Real-Time Polygonal-Light Shading with Linearly Transformed Cosines},
+  author = {Heitz, Eric and Dupuy, Jonathan and Hill, Stephen and Neubelt, David},
+  date = {2016-07-11},
+  journaltitle = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {35},
+  number = {4},
+  pages = {41:1--41:8},
+  issn = {0730-0301},
+  doi = {10.1145/2897824.2925895},
+  url = {https://doi.org/10.1145/2897824.2925895},
+  urldate = {2024-02-02},
+  abstract = {In this paper, we show that applying a linear transformation---represented by a 3 x 3 matrix---to the direction vectors of a spherical distribution yields another spherical distribution, for which we derive a closed-form expression. With this idea, we can use any spherical distribution as a base shape to create a new family of spherical distributions with parametric roughness, elliptic anisotropy and skewness. If the original distribution has an analytic expression, normalization, integration over spherical polygons, and importance sampling, then these properties are inherited by the linearly transformed distributions. By choosing a clamped cosine for the original distribution we obtain a family of distributions, which we call Linearly Transformed Cosines (LTCs), that provide a good approximation to physically based BRDFs and that can be analytically integrated over arbitrary spherical polygons. We show how to use these properties in a realtime polygonal-light shading application. Our technique is robust, fast, accurate and simple to implement.},
+  keywords = {area lighting,BRDF,real-time rendering,shading}
+}
+
+@article{hendlerNonBlockingStealHalfWork,
+  title = {Non-{{Blocking Steal-Half Work Queues}}},
+  author = {Hendler, Danny and Shavit, Nir},
+  abstract = {The non-blocking work-stealing algorithm of Arora et al. has been gaining popularity as the multiprocessor load balancing technology of choice in both Industry and Academia. At its core is an ingenious scheme for stealing a single item in a non-blocking manner from an array based deque. In recent years, several researchers have argued that stealing more than a single item at a time allows for increased stability, greater overall balance, and improved performance.},
+  langid = {english}
+}
+
+@online{HttpsKenmusethorgOpenVDB_files,
+  title = {{{https://ken.museth.org/OpenVDB\_files/Museth\_TOG13.pdf}}},
+  url = {https://ken.museth.org/OpenVDB_files/Museth_TOG13.pdf},
+  urldate = {2024-02-21}
+}
+
+@article{IEEEStd754tm2008,
+  title = {{{IEEE Std}} 754™-2008 ({{Revision}} of {{IEEE Std}} 754-1985), {{IEEE Standard}} for {{Floating-Point Arithmetic}}},
+  abstract = {Abstract: This standard specifies interchange and arithmetic formats and methods for binary and decimal floating-point arithmetic in computer programming environments. This standard specifies exception conditions and their default handling. An implementation of a floating-point system conforming to this standard may be realized entirely in software, entirely in hardware, or in any combination of software and hardware. For operations specified in the normative part of this standard, numerical results and exceptions are uniquely determined by the values of the input data, sequence of operations, and destination formats, all under user control.},
+  langid = {english}
+}
+
+@online{Intel64IA32,
+  title = {{{Intel}}® 64 and {{IA-32 Architectures Software Developer Manuals}}},
+  url = {https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html},
+  urldate = {2024-05-27},
+  abstract = {These manuals describe the architecture and programming environment of the Intel® 64 and IA-32 architectures.},
+  langid = {english},
+  organization = {Intel}
+}
+
+@article{Intel64IA32a,
+  title = {{{Intel}}® 64 and {{IA-32 Architectures Optimization Reference Manual}}: {{Volume}} 1},
+  langid = {english}
+}
+
+@article{Intel64IA32b,
+  title = {{{Intel}}® 64 and {{IA-32 Architectures Optimization Reference Manual}}: {{Volume}} 2},
+  langid = {english}
+}
+
+@online{IntroductionLocalitySensitiveHashing,
+  title = {Introduction to {{Locality-Sensitive Hashing}}},
+  url = {https://tylerneylon.com/a/lsh1/},
+  urldate = {2024-06-04}
+}
+
+@article{jimenezSMAAEnhancedSubpixel2012,
+  title = {{{SMAA}}: {{Enhanced Subpixel Morphological Antialiasing}}},
+  shorttitle = {{{SMAA}}},
+  author = {Jimenez, Jorge and Echevarria, Jose I. and Sousa, Tiago and Gutierrez, Diego},
+  date = {2012-05},
+  journaltitle = {Computer Graphics Forum},
+  shortjournal = {Computer Graphics Forum},
+  volume = {31},
+  pages = {355--364},
+  issn = {0167-7055, 1467-8659},
+  doi = {10.1111/j.1467-8659.2012.03014.x},
+  url = {https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2012.03014.x},
+  urldate = {2024-05-04},
+  abstract = {We present a new image-based, post-processing antialiasing technique, which offers practical solutions to the common, open problems of existing filter-based real-time antialiasing algorithms. Some of the new features include local contrast analysis for more reliable edge detection, and a simple and effective way to handle sharp geometric features and diagonal lines. This, along with our accelerated and accurate pattern classification allows for a better reconstruction of silhouettes. Our method shows for the first time how to combine morphological antialiasing (MLAA) with additional multi/supersampling strategies (MSAA, SSAA) for accurate subpixel features, and how to couple it with temporal reprojection; always preserving the sharpness of the image. All these solutions combine synergies making for a very robust technique, yielding results of better overall quality than previous approaches while more closely converging to MSAA/SSAA references but maintaining extremely fast execution times. Additionally, we propose different presets to better fit the available resources or particular needs of each scenario.},
+  issue = {2pt1},
+  langid = {english}
+}
+
+@inreference{JohnsonLindenstraussLemma2024,
+  title = {Johnson–{{Lindenstrauss}} Lemma},
+  booktitle = {Wikipedia},
+  date = {2024-04-08T19:26:34Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Johnson%E2%80%93Lindenstrauss_lemma&oldid=1217934762},
+  urldate = {2024-06-04},
+  abstract = {In mathematics, the Johnson–Lindenstrauss lemma is a result named after William B. Johnson and Joram Lindenstrauss concerning low-distortion embeddings of points from high-dimensional into low-dimensional Euclidean space. The lemma states that a set of points in a high-dimensional space can be embedded into a space of much lower dimension in such a way that distances between the points are nearly preserved. In the classical proof of the lemma, the embedding is a random orthogonal projection. The lemma has applications in compressed sensing, manifold learning, dimensionality reduction, and graph embedding. Much of the data stored and manipulated on computers, including text and images, can be represented as points in a high-dimensional space (see vector space model for the case of text). However, the essential algorithms for working with such data tend to become bogged down very quickly as dimension increases.  It is therefore desirable to reduce the dimensionality of the data in a way that preserves its relevant structure. The Johnson–Lindenstrauss lemma is a classic result in this vein. Also, the lemma is tight up to a constant factor, i.e. there exists a set of points of size m that needs dimension                        Ω                    (                                                        log                 ⁡                 (                 m                 )                                               ε                                    2                                                                   )                          \{\textbackslash displaystyle \textbackslash Omega \textbackslash left(\{\textbackslash frac \{\textbackslash log(m)\}\{\textbackslash varepsilon \textasciicircum\{2\}\}\}\textbackslash right)\}    in order to preserve the distances between all pairs of points within a factor of                         (         1         ±         ε         )                 \{\textbackslash displaystyle (1\textbackslash pm \textbackslash varepsilon )\}    .},
+  langid = {english},
+  annotation = {Page Version ID: 1217934762}
+}
+
+@article{johnsonTravelingSalesmanProblem,
+  title = {The {{Traveling Salesman Problem}}: {{A Case Study}} in {{Local Optimization}}},
+  author = {Johnson, David S and McGeoch, Lyle A},
+  abstract = {This is a preliminary version of a chapter that appeared in the book Local Search in Combinatorial Optimization, E. H. L. Aarts and J. K. Lenstra (eds.), John Wiley and Sons, London, 1997, pp. 215-310. The traveling salesman problem (TSP) has been an early proving ground for many approaches to combinatorial optimization, including classical local optimization techniques as well as many of the more recent variants on local optimization, such as simulated annealing, tabu search, neural networks, and genetic algorithms. This chapter discusses how these various approaches have been adapted to the TSP and evaluates their relative success in this perhaps atypical domain from both a theoretical and an experimental point of view.},
+  langid = {english}
+}
+
+@online{katoDifferentiableRenderingSurvey2020,
+  title = {Differentiable {{Rendering}}: {{A Survey}}},
+  shorttitle = {Differentiable {{Rendering}}},
+  author = {Kato, Hiroharu and Beker, Deniz and Morariu, Mihai and Ando, Takahiro and Matsuoka, Toru and Kehl, Wadim and Gaidon, Adrien},
+  date = {2020-07-30},
+  eprint = {2006.12057},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2006.12057},
+  urldate = {2024-06-07},
+  abstract = {Deep neural networks (DNNs) have shown remarkable performance improvements on vision-related tasks such as object detection or image segmentation. Despite their success, they generally lack the understanding of 3D objects which form the image, as it is not always possible to collect 3D information about the scene or to easily annotate it. Differentiable rendering is a novel field which allows the gradients of 3D objects to be calculated and propagated through images. It also reduces the requirement of 3D data collection and annotation, while enabling higher success rate in various applications. This paper reviews existing literature and discusses the current state of differentiable rendering, its applications and open research problems.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics}
+}
+
+@article{kerbl3DGaussianSplatting2023,
+  title = {{{3D Gaussian Splatting}} for {{Real-Time Radiance Field Rendering}}},
+  author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkuehler, Thomas and Drettakis, George},
+  date = {2023-08},
+  journaltitle = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {42},
+  number = {4},
+  pages = {1--14},
+  issn = {0730-0301, 1557-7368},
+  doi = {10.1145/3592433},
+  url = {https://dl.acm.org/doi/10.1145/3592433},
+  urldate = {2024-04-28},
+  abstract = {Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.},
+  langid = {english}
+}
+
+@article{kerriskLinuxProgrammingInterface,
+  title = {The {{Linux Programming Interface}}},
+  author = {Kerrisk, Michael},
+  langid = {english}
+}
+
+@article{khuongArrayLayoutsComparisonBased2017,
+  title = {Array {{Layouts}} for {{Comparison-Based Searching}}},
+  author = {Khuong, Paul-Virak and Morin, Pat},
+  date = {2017-12-15},
+  journaltitle = {ACM Journal of Experimental Algorithmics},
+  shortjournal = {ACM J. Exp. Algorithmics},
+  volume = {22},
+  pages = {1--39},
+  issn = {1084-6654, 1084-6654},
+  doi = {10.1145/3053370},
+  url = {https://dl.acm.org/doi/10.1145/3053370},
+  urldate = {2024-07-31},
+  abstract = {We attempt to determine the best order and search algorithm to store n comparable data items in an array, A, of length n so that we can, for any query value, x, quickly find the smallest value in A that is greater than or equal to x. In particular, we consider the important case where there are many such queries to the same array, A, which resides entirely in RAM. In addition to the obvious sorted order/binary search combination we consider the Eytzinger (BFS) layout normally used for heaps, an implicit B-tree layout that generalizes the Eytzinger layout, and the van Emde Boas layout commonly used in the cache-oblivious algorithms literature.},
+  langid = {english}
+}
+
+@article{kobbeltSurveyPointbasedTechniques2004,
+  title = {A Survey of Point-Based Techniques in Computer Graphics},
+  author = {Kobbelt, Leif and Botsch, Mario},
+  date = {2004-12},
+  journaltitle = {Computers \& Graphics},
+  shortjournal = {Computers \& Graphics},
+  volume = {28},
+  number = {6},
+  pages = {801--814},
+  issn = {00978493},
+  doi = {10.1016/j.cag.2004.08.009},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0097849304001487},
+  urldate = {2024-08-05},
+  abstract = {In recent years point-based geometry has gained increasing attention as an alternative surface representation, both for efficient rendering and for flexible geometry processing of highly complex 3D-models. Point sampled objects do neither have to store nor to maintain globally consistent topological information. Therefore they are more flexible compared to triangle meshes when it comes to handling highly complex or dynamically changing shapes. In this paper, we make an attempt to give an overview of the various point-based methods that have been proposed over the last years. In particular we review and evaluate different shape representations, geometric algorithms, and rendering methods which use points as a universal graphics primitive.},
+  langid = {english}
+}
+
+@inproceedings{kumarFriendlyBarriersEfficient2014,
+  title = {Friendly Barriers: Efficient Work-Stealing with Return Barriers},
+  shorttitle = {Friendly Barriers},
+  booktitle = {Proceedings of the 10th {{ACM SIGPLAN}}/{{SIGOPS}} International Conference on {{Virtual}} Execution Environments},
+  author = {Kumar, Vivek and Blackburn, Stephen M. and Grove, David},
+  date = {2014-03},
+  pages = {165--176},
+  publisher = {ACM},
+  location = {Salt Lake City Utah USA},
+  doi = {10.1145/2576195.2576207},
+  url = {https://dl.acm.org/doi/10.1145/2576195.2576207},
+  urldate = {2024-10-21},
+  abstract = {This paper addresses the problem of efficiently supporting parallelism within a managed runtime. A popular approach for exploiting software parallelism on parallel hardware is task parallelism, where the programmer explicitly identifies potential parallelism and the runtime then schedules the work. Work-stealing is a promising scheduling strategy that a runtime may use to keep otherwise idle hardware busy while relieving overloaded hardware of its burden. However, work-stealing comes with substantial overheads. Recent work identified sequential overheads of work-stealing, those that occur even when no stealing takes place, as a significant source of overhead. That work was able to reduce sequential overheads to just 15\% [21].},
+  eventtitle = {{{VEE}} '14: 10th {{ACM SIGPLAN}}/{{SIGOPS International Conference}} on {{Virtual Execution Environments}}},
+  isbn = {978-1-4503-2764-0},
+  langid = {english}
+}
+
+@article{laineEfficientSparseVoxel,
+  title = {Efficient {{Sparse Voxel Octrees}} – {{Analysis}}, {{Extensions}}, and {{Implementation}}},
+  author = {Laine, Samuli and Karras, Tero},
+  abstract = {This technical report extends our previous paper on sparse voxel octrees. We first discuss the benefits and drawbacks of voxel representations and how the storage space requirements behave for different kinds of content. Then, we explain in detail our compact data structure for storing voxels and an efficient ray cast algorithm that utilizes this structure, including the contributions of the original paper: additional voxel contour information, normal compression format for storing high-precision object-space normals, post-process filtering technique for smoothing out blockiness of shading, and beam optimization for accelerating ray casts.},
+  langid = {english}
+}
+
+@online{LavalHDRSky,
+  title = {The {{Laval HDR Sky Database}}},
+  url = {http://hdrdb.com/sky/},
+  urldate = {2024-05-28}
+}
+
+@article{leeWhenPrefetchingWorks2012,
+  title = {When {{Prefetching Works}}, {{When It Doesn}}’t, and {{Why}}},
+  author = {Lee, Jaekyu and Kim, Hyesoon and Vuduc, Richard},
+  date = {2012-03},
+  journaltitle = {ACM Transactions on Architecture and Code Optimization},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  volume = {9},
+  number = {1},
+  pages = {1--29},
+  issn = {1544-3566, 1544-3973},
+  doi = {10.1145/2133382.2133384},
+  url = {https://dl.acm.org/doi/10.1145/2133382.2133384},
+  urldate = {2024-07-31},
+  abstract = {In emerging and future high-end processor systems, tolerating increasing cache miss latency and properly managing memory bandwidth will be critical to achieving high performance. Prefetching, in both hardware and software, is among our most important available techniques for doing so; yet, we claim that prefetching is perhaps also the least well-understood.             Thus, the goal of this study is to develop a novel, foundational understanding of both the benefits and limitations of hardware and software prefetching. Our study includes: source code-level analysis, to help in understanding the practical strengths and weaknesses of compiler- and software-based prefetching; a study of the synergistic and antagonistic effects between software and hardware prefetching; and an evaluation of hardware prefetching training policies in the presence of software prefetching requests. We use both simulation and measurement on real systems. We find, for instance, that although there are many opportunities for compilers to prefetch much more aggressively than they currently do, there is also a tangible risk of interference with training existing hardware prefetching mechanisms. Taken together, our observations suggest new research directions for cooperative hardware/software prefetching.},
+  langid = {english}
+}
+
+@online{LinuxFoundationReferenced,
+  title = {Linux {{Foundation Referenced Specifications}}},
+  url = {https://refspecs.linuxfoundation.org/},
+  urldate = {2024-06-03}
+}
+
+@inproceedings{macklinXPBDPositionbasedSimulation2016,
+  title = {{{XPBD}}: Position-Based Simulation of Compliant Constrained Dynamics},
+  shorttitle = {{{XPBD}}},
+  booktitle = {Proceedings of the 9th {{International Conference}} on {{Motion}} in {{Games}}},
+  author = {Macklin, Miles and Müller, Matthias and Chentanez, Nuttapong},
+  date = {2016-10-10},
+  pages = {49--54},
+  publisher = {ACM},
+  location = {Burlingame California},
+  doi = {10.1145/2994258.2994272},
+  url = {https://dl.acm.org/doi/10.1145/2994258.2994272},
+  urldate = {2024-08-20},
+  abstract = {We address the long-standing problem of iteration count and time step dependent constraint stiffness in position-based dynamics (PBD). We introduce a simple extension to PBD that allows it to accurately and efficiently simulate arbitrary elastic and dissipative energy potentials in an implicit manner. In addition, our method provides constraint force estimates, making it applicable to a wider range of applications, such those requiring haptic user-feedback. We compare our algorithm to more expensive non-linear solvers and find it produces visually similar results while maintaining the simplicity and robustness of the PBD method.},
+  eventtitle = {{{MiG}} '16: {{Motion In Games}}},
+  isbn = {978-1-4503-4592-7},
+  langid = {english}
+}
+
+@article{merrellModelSynthesisGeneral2011,
+  title = {Model {{Synthesis}}: {{A General Procedural Modeling Algorithm}}},
+  shorttitle = {Model {{Synthesis}}},
+  author = {Merrell, Paul and Manocha, Dinesh},
+  date = {2011-06},
+  journaltitle = {IEEE Transactions on Visualization and Computer Graphics},
+  volume = {17},
+  number = {6},
+  pages = {715--728},
+  issn = {1941-0506},
+  doi = {10.1109/TVCG.2010.112},
+  abstract = {We present a method for procedurally modeling general complex 3D shapes. Our approach can automatically generate complex models of buildings, man-made structures, or urban data sets in a few minutes based on user-defined inputs. The algorithm attempts to generate complex 3D models that resemble a user-defined input model and satisfy various dimensional, geometric, and algebraic constraints to control the shape. These constraints are used to capture the intent of the user and generate shapes that look more natural. We also describe efficient techniques to handle complex shapes and highlight its performance on many different types of models. We compare model synthesis algorithms with other procedural modeling techniques, discuss the advantages of different approaches, and describe as close connection between model synthesis and context-sensitive grammars.},
+  eventtitle = {{{IEEE Transactions}} on {{Visualization}} and {{Computer Graphics}}},
+  keywords = {Buildings,Computational modeling,Grammar,Model synthesis,procedural modeling.,Roads,Shape,Solid modeling,Three dimensional displays}
+}
+
+@online{ModelSynthesisGeneral,
+  title = {Model {{Synthesis}}: {{A General Procedural Modeling Algorithm}} - {{PubMed}}},
+  url = {https://pubmed.ncbi.nlm.nih.gov/20733235/},
+  urldate = {2023-05-05}
+}
+
+@online{MSAAMultisampleAntialiasing,
+  title = {{{MSAA}} ({{Multisample}} Anti-Aliasing) :: {{Vulkan Documentation Project}}},
+  url = {https://docs.vulkan.org/samples/latest/samples/performance/msaa/README.html},
+  urldate = {2024-05-04}
+}
+
+@online{muratoriComputerEnhanceCasey2023,
+  title = {Computer, {{Enhance}}! | {{Casey Muratori}} | {{Substack}}},
+  author = {Muratori, Casey},
+  date = {2023-01-27},
+  url = {https://www.computerenhance.com/},
+  urldate = {2024-05-27},
+  abstract = {Programming courses, interviews, commentary. Click to read "Computer, Enhance!", by Casey Muratori, a Substack publication with tens of thousands of subscribers.},
+  langid = {english}
+}
+
+@article{musethVDBHighresolutionSparse2013,
+  title = {{{VDB}}: {{High-resolution}} Sparse Volumes with Dynamic Topology},
+  shorttitle = {{{VDB}}},
+  author = {Museth, Ken},
+  date = {2013-06},
+  journaltitle = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {32},
+  number = {3},
+  pages = {1--22},
+  issn = {0730-0301, 1557-7368},
+  doi = {10.1145/2487228.2487235},
+  url = {https://dl.acm.org/doi/10.1145/2487228.2487235},
+  urldate = {2024-02-21},
+  abstract = {We have developed a novel hierarchical data structure for the efficient representation of sparse, time-varying volumetric data discretized on a 3D grid. Our “VDB”, so named because it is a Volumetric, Dynamic grid that shares several characteristics with B+trees, exploits spatial coherency of time-varying data to separately and compactly encode data values and grid topology. VDB models a virtually infinite 3D index space that allows for cache-coherent and fast data access into sparse volumes of high resolution. It imposes no topology restrictions on the sparsity of the volumetric data, and it supports fast (average               O               (1)) random access patterns when the data are inserted, retrieved, or deleted. This is in contrast to most existing sparse volumetric data structures, which assume either static or manifold topology and require specific data access patterns to compensate for slow random access. Since the VDB data structure is fundamentally hierarchical, it also facilitates adaptive grid sampling, and the inherent acceleration structure leads to fast algorithms that are well-suited for simulations. As such, VDB has proven useful for several applications that call for large, sparse, animated volumes, for example, level set dynamics and cloud modeling. In this article, we showcase some of these algorithms and compare VDB with existing, state-of-the-art data structures.},
+  langid = {english}
+}
+
+@online{NASMNetwideAssembler,
+  title = {{{NASM}} - {{The Netwide Assembler}}},
+  url = {https://www.nasm.us/doc/nasmdoc3.html},
+  urldate = {2024-05-27}
+}
+
+@online{OpenVDBDocumentation,
+  title = {{{OpenVDB}} - {{Documentation}}},
+  url = {https://www.openvdb.org/documentation/},
+  urldate = {2024-02-21}
+}
+
+@inproceedings{pfisterSurfelsSurfaceElements2000,
+  title = {Surfels: Surface Elements as Rendering Primitives},
+  shorttitle = {Surfels},
+  booktitle = {Proceedings of the 27th Annual Conference on {{Computer}} Graphics and Interactive Techniques  - {{SIGGRAPH}} '00},
+  author = {Pfister, Hanspeter and Zwicker, Matthias and Van Baar, Jeroen and Gross, Markus},
+  date = {2000},
+  pages = {335--342},
+  publisher = {ACM Press},
+  location = {Not Known},
+  doi = {10.1145/344779.344936},
+  url = {http://portal.acm.org/citation.cfm?doid=344779.344936},
+  urldate = {2024-04-28},
+  abstract = {Surface elements (surfels) are a powerful paradigm to efficiently render complex geometric objects at interactive frame rates. Unlike classical surface discretizations, i.e., triangles or quadrilateral meshes, surfels are point primitives without explicit connectivity. Surfel attributes comprise depth, texture color, normal, and others. As a pre-process, an octree-based surfel representation of a geometric object is computed. During sampling, surfel positions and normals are optionally perturbed, and different levels of texture colors are prefiltered and stored per surfel. During rendering, a hierarchical forward warping algorithm projects surfels to a z-buffer. A novel method called visibility splatting determines visible surfels and holes in the z-buffer. Visible surfels are shaded using texture filtering, Phong illumination, and environment mapping using per-surfel normals. Several methods of image reconstruction, including supersampling, offer flexible speed-quality tradeoffs. Due to the simplicity of the operations, the surfel rendering pipeline is amenable for hardware implementation. Surfel objects offer complex shape, low rendering cost and high image quality, which makes them specifically suited for low-cost, real-time graphics, such as games.},
+  eventtitle = {The 27th Annual Conference},
+  isbn = {978-1-58113-208-3},
+  langid = {english}
+}
+
+@book{pharrPhysicallyBasedRendering2023,
+  title = {Physically Based Rendering: From Theory to Implementation},
+  shorttitle = {Physically Based Rendering},
+  author = {Pharr, Matt and Jakob, Wenzel and Humphreys, Greg},
+  date = {2023},
+  edition = {Fourth edition},
+  publisher = {The MIT Press},
+  location = {Cambridge, Massachusetts},
+  abstract = {"Physically Based Rendering, fourth edition, is a computer graphics textbook that takes a physically based approach to image synthesis. It sets the standard for physically based rendering for the field and the industry"--},
+  isbn = {978-0-262-04802-6},
+  langid = {english},
+  pagetotal = {1243},
+  keywords = {Computer graphics,Digital techniques,Dreidimensionale Computergrafik,Image processing,Realistische Computergrafik,Rendering,Three-dimensional display systems}
+}
+
+@online{PINotPI2012,
+  title = {{{PI}} or Not to {{PI}} in Game Lighting Equation},
+  date = {2012-01-08T03:00:31+00:00},
+  url = {https://seblagarde.wordpress.com/2012/01/08/pi-or-not-to-pi-in-game-lighting-equation/},
+  urldate = {2024-05-28},
+  abstract = {Version : 3.1 – Living blog – First version was 4 January 2012 With physically based rendering current trend of photo-realistic game, I feel the need to do my lighting equation more physically corr…},
+  langid = {english},
+  organization = {Sébastien Lagarde}
+}
+
+@inproceedings{ritschelApproximatingDynamicGlobal2009,
+  title = {Approximating Dynamic Global Illumination in Image Space},
+  booktitle = {Proceedings of the 2009 Symposium on {{Interactive 3D}} Graphics and Games},
+  author = {Ritschel, Tobias and Grosch, Thorsten and Seidel, Hans-Peter},
+  date = {2009-02-27},
+  pages = {75--82},
+  publisher = {ACM},
+  location = {Boston Massachusetts},
+  doi = {10.1145/1507149.1507161},
+  url = {https://dl.acm.org/doi/10.1145/1507149.1507161},
+  urldate = {2024-02-01},
+  abstract = {Physically plausible illumination at real-time framerates is often achieved using approximations. One popular example is ambient occlusion (AO), for which very simple and efficient implementations are used extensively in production. Recent methods approximate AO between nearby geometry in screen space (SSAO). The key observation described in this paper is, that screen-space occlusion methods can be used to compute many more types of effects than just occlusion, such as directional shadows and indirect color bleeding. The proposed generalization has only a small overhead compared to classic SSAO, approximates direct and one-bounce light transport in screen space, can be combined with other methods that simulate transport for macro structures and is visually equivalent to SSAO in the worst case without introducing new artifacts. Since our method works in screen space, it does not depend on the geometric complexity. Plausible directional occlusion and indirect lighting effects can be displayed for large and fully dynamic scenes at real-time frame rates.},
+  eventtitle = {{{I3D}} '09: {{Symposium}} on {{Interactive 3D Graphics}} and {{Games}}},
+  isbn = {978-1-60558-429-4},
+  langid = {english}
+}
+
+@book{sandersSequentialParallelAlgorithms2019,
+  title = {Sequential and {{Parallel Algorithms}} and {{Data Structures}}: {{The Basic Toolbox}}},
+  shorttitle = {Sequential and {{Parallel Algorithms}} and {{Data Structures}}},
+  author = {Sanders, Peter and Mehlhorn, Kurt and Dietzfelbinger, Martin and Dementiev, Roman},
+  date = {2019},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-030-25209-0},
+  url = {http://link.springer.com/10.1007/978-3-030-25209-0},
+  urldate = {2024-04-12},
+  isbn = {978-3-030-25208-3 978-3-030-25209-0},
+  langid = {english}
+}
+
+@inproceedings{schlickInexpensiveBRDFModel1994,
+  title = {An Inexpensive {{BRDF}} Model for Physically-Based Rendering},
+  booktitle = {Computer Graphics Forum},
+  author = {Schlick, Christophe},
+  date = {1994},
+  volume = {13},
+  number = {3},
+  pages = {233--246},
+  publisher = {Wiley Online Library}
+}
+
+@online{SciHubModelSynthesis,
+  title = {Sci-{{Hub}} | {{Model Synthesis}}: {{A General Procedural Modeling Algorithm}}. {{IEEE Transactions}} on {{Visualization}} and {{Computer Graphics}}, 17(6), 715–728 | 10.1109/{{TVCG}}.2010.112},
+  url = {https://sci-hub.ru/10.1109/TVCG.2010.112},
+  urldate = {2023-05-05}
+}
+
+@book{scottSharedMemorySynchronization2024,
+  title = {Shared-{{Memory Synchronization}}},
+  author = {Scott, Michael L. and Brown, Trevor},
+  date = {2024},
+  series = {Synthesis {{Lectures}} on {{Computer Architecture}}},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-031-38684-8},
+  url = {https://link.springer.com/10.1007/978-3-031-38684-8},
+  urldate = {2024-10-28},
+  isbn = {978-3-031-38683-1 978-3-031-38684-8},
+  langid = {english}
+}
+
+@online{shirleyRayTracingNext2020,
+  title = {Ray {{Tracing}}: {{The Next Week}}},
+  author = {Shirley, Peter},
+  date = {2020-12},
+  url = {https://raytracing.github.io/books/RayTracingTheNextWeek.html}
+}
+
+@online{shirleyRayTracingOne2020,
+  title = {Ray {{Tracing}} in {{One Weekend}}},
+  author = {Shirley, Peter},
+  date = {2020-12},
+  url = {https://raytracing.github.io/books/RayTracingInOneWeekend.html}
+}
+
+@online{shirleyRayTracingRest2020,
+  title = {Ray {{Tracing}}: {{The Rest}} of {{Your Life}}},
+  author = {Shirley, Peter},
+  date = {2020-12},
+  url = {https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html}
+}
+
+@online{SkylakeClientMicroarchitectures,
+  title = {Skylake (Client) - {{Microarchitectures}} - {{Intel}} - {{WikiChip}}},
+  url = {https://en.wikichip.org/wiki/intel/microarchitectures/skylake_(client)#Entire_SoC_Overview_.28dual.29},
+  urldate = {2024-05-27},
+  langid = {english}
+}
+
+@online{SoftwareOptimizationResources,
+  title = {Software Optimization Resources. {{C}}++ and Assembly. {{Windows}}, {{Linux}}, {{BSD}}, {{Mac OS X}}},
+  url = {https://www.agner.org/optimize/},
+  urldate = {2024-05-27}
+}
+
+@online{Standard,
+  title = {The {{Standard}} - {{C}}},
+  url = {https://www.iso-9899.info/wiki/The_Standard},
+  urldate = {2024-05-27}
+}
+
+@online{Standards,
+  title = {C++ - {{Standards}}},
+  url = {https://www.open-std.org/jtc1/sc22/wg21/docs/standards},
+  urldate = {2024-05-27}
+}
+
+@online{SystemABIOSDev,
+  title = {System {{V ABI}} - {{OSDev Wiki}}},
+  url = {https://osdev.org/System_V_ABI},
+  urldate = {2024-06-03}
+}
+
+@article{teschnerOptimizedSpatialHashing,
+  title = {Optimized {{Spatial Hashing}} for {{Collision Detection}} of {{Deformable Objects}}},
+  author = {Teschner, Matthias and Heidelberger, Bruno and Muller, Matthias and Pomeranets, Danat and Gross, Markus},
+  abstract = {We propose a new approach to collision and self–collision detection of dynamically deforming objects that consist of tetrahedrons. Tetrahedral meshes are commonly used to represent volumetric deformable models and the presented algorithm is integrated in a physically–based environment, which can be used in game engines and surgical simulators. The proposed algorithm employs a hash function for compressing a potentially infinite regular spatial grid. Although the hash function does not always provide a unique mapping of grid cells, it can be generated very efficiently and does not require complex data structures, such as octrees or BSPs. We have investigated and optimized the parameters of the collision detection algorithm, such as hash function, hash table size and spatial cell size. The algorithm can detect collisions and self–collisions in environments of up to 20k tetrahedrons in real–time. Although the algorithm works with tetrahedral meshes, it can be easily adapted to other object primitives, such as triangles.},
+  langid = {english}
+}
+
+@online{TutorialPerfWiki,
+  title = {Tutorial - {{Perf Wiki}}},
+  url = {https://perf.wiki.kernel.org/index.php/Tutorial#Sampling_with_perf_record},
+  urldate = {2024-06-05}
+}
+
+@online{tylermsftCallingConventions2021,
+  title = {Calling {{Conventions}}},
+  author = {TylerMSFT},
+  date = {2021-08-03},
+  url = {https://learn.microsoft.com/en-us/cpp/cpp/calling-conventions?view=msvc-170},
+  urldate = {2024-05-27},
+  abstract = {Learn more about: Calling Conventions},
+  langid = {american}
+}
+
+@online{UsePointsDisplay,
+  title = {The {{Use}} of {{Points}} as a {{Display Primitive}}},
+  url = {https://graphics.stanford.edu/papers/points/},
+  urldate = {2024-04-28}
+}
+
+@incollection{vandijkLaceNonblockingSplit2014,
+  title = {Lace: {{Non-blocking Split Deque}} for {{Work-Stealing}}},
+  shorttitle = {Lace},
+  booktitle = {Euro-{{Par}} 2014: {{Parallel Processing Workshops}}},
+  author = {Van Dijk, Tom and Van De Pol, Jaco C.},
+  editor = {Lopes, Luís and Žilinskas, Julius and Costan, Alexandru and Cascella, Roberto G. and Kecskemeti, Gabor and Jeannot, Emmanuel and Cannataro, Mario and Ricci, Laura and Benkner, Siegfried and Petit, Salvador and Scarano, Vittorio and Gracia, José and Hunold, Sascha and Scott, Stephen L. and Lankes, Stefan and Lengauer, Christian and Carretero, Jesús and Breitbart, Jens and Alexander, Michael},
+  date = {2014},
+  volume = {8806},
+  pages = {206--217},
+  publisher = {Springer International Publishing},
+  location = {Cham},
+  doi = {10.1007/978-3-319-14313-2_18},
+  url = {http://link.springer.com/10.1007/978-3-319-14313-2_18},
+  urldate = {2024-10-21},
+  abstract = {Work-stealing is an efficient method to implement load balancing in fine-grained task parallelism. Typically, concurrent deques are used for this purpose. A disadvantage of many concurrent deques is that they require expensive memory fences for local deque operations.},
+  isbn = {978-3-319-14312-5 978-3-319-14313-2},
+  langid = {english}
+}
+
+@thesis{veachRobustMonteCarlo1998,
+  title = {Robust {{Monte Carlo}} Methods for Light Transport Simulation},
+  author = {Veach, Eric},
+  namea = {Stanford University},
+  nameatype = {collaborator},
+  date = {1998},
+  series = {Report / {{Stanford University}}. {{Dept}}. of {{Computer Science}}},
+  number = {STAN-CS-TR-98-1610},
+  institution = {Stanford University, Dept. of Computer Science},
+  location = {Stanford, Calif},
+  pagetotal = {406},
+  keywords = {Computer algorithms,Monte Carlo method,Transportation problems (Programming)}
+}
+
+@online{VolumetricBillboardsPhilippe,
+  title = {Volumetric {{Billboards}} ({{Philippe Decaudin}})},
+  url = {https://phildec.users.sourceforge.net/Research/VolumetricBillboards.php},
+  urldate = {2024-04-28}
+}
+
+@book{warrenHackersDelight2013,
+  title = {Hacker's Delight},
+  author = {Warren, Henry S.},
+  date = {2013},
+  series = {Always Learning},
+  edition = {Second Edition},
+  publisher = {Addison-Wesley},
+  location = {Upper Saddle River, NJ Boston Indianapolis San Fransico New York Toronto Montreal London Munich Paris Madrid Capetown Sydney Tokyo Singapore Mexico City},
+  isbn = {978-0-321-84268-8},
+  langid = {english},
+  pagetotal = {494}
+}
+
+@article{whittedImprovedIlluminationModel1980,
+  title = {An Improved Illumination Model for Shaded Display},
+  author = {Whitted, Turner},
+  date = {1980-06-01},
+  journaltitle = {Communications of the ACM},
+  shortjournal = {Commun. ACM},
+  volume = {23},
+  number = {6},
+  pages = {343--349},
+  issn = {0001-0782},
+  doi = {10.1145/358876.358882},
+  url = {https://doi.org/10.1145/358876.358882},
+  urldate = {2022-11-08},
+  abstract = {To accurately render a two-dimensional image of a three-dimensional scene, global illumination information that affects the intensity of each pixel of the image must be known at the time the intensity is calculated. In a simplified form, this information is stored in a tree of “rays” extending from the viewer to the first surface encountered and from there to other surfaces and to the light sources. A visible surface algorithm creates this tree for each pixel of the display and passes it to the shader. The shader then traverses the tree to determine the intensity of the light received by the viewer. Consideration of all of these factors allows the shader to accurately simulate true reflection, shadows, and refraction, as well as the effects simulated by conventional shaders. Anti-aliasing is included as an integral part of the visibility calculations. Surfaces displayed include curved as well as polygonal surfaces.},
+  keywords = {computer animation,computer graphics,raster displays,shading,visible surface algorithms}
+}
+
+@thesis{wingerdenRealtimeRayTracing2015,
+  type = {mathesis},
+  title = {Real-Time {{Ray}} Tracing and {{Editing}} of {{Large Voxel Scenes}}},
+  author = {family=Wingerden, given=T. L., prefix=van, useprefix=false},
+  date = {2015},
+  url = {https://studenttheses.uu.nl/handle/20.500.12932/20460},
+  urldate = {2024-05-03},
+  abstract = {A novel approach is presented to render large voxel scenes in real-time. The approach differs from existing solutions in that a large emphasis is put on allowing the user to edit and stream large datasets. Previous solutions often use compression schemes involving hierarchical data layouts such as sparse voxel octrees that require some form of preprocessing, which prevents efficient editing. By keeping data in raw format we avoid having to preprocess the data making it directly editable. We allow for efficient storage of large empty spaces using a system of layered grids . Our results show our solution has competitive rendering performance and memory usage and allows fast and easy access to the data. Along with the raytracing algorithm and datastructure an occlusion based streaming system is presented. Our system also includes an easy interface for editing voxels. Furthermore, we support streaming from disk and basic level of detail. Combining these features we are able to render and edit potentially infinite landscapes while using a finite amount of memory.},
+  langid = {english},
+  annotation = {Accepted: 2015-07-21T17:01:00Z}
+}
+
+@online{X64syscallsh,
+  title = {X64.Syscall.Sh},
+  url = {https://x64.syscall.sh/},
+  urldate = {2024-07-14},
+  abstract = {System calls for x64},
+  langid = {english},
+  organization = {x64.syscall.sh}
+}
+
+@article{yangSurveyTemporalAntialiasing2020,
+  title = {A {{Survey}} of {{Temporal Antialiasing Techniques}}},
+  author = {Yang, Lei and Liu, Shiqiu and Salvi, Marco},
+  date = {2020},
+  journaltitle = {Computer Graphics Forum},
+  volume = {39},
+  number = {2},
+  pages = {607--621},
+  issn = {1467-8659},
+  doi = {10.1111/cgf.14018},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14018},
+  urldate = {2024-05-04},
+  abstract = {Temporal Antialiasing (TAA), formally defined as temporally-amortized supersampling, is the most widely used antialiasing technique in today's real-time renderers and game engines. This survey provides a systematic overview of this technique. We first review the history of TAA, its development path and related work. We then identify the two main sub-components of TAA, sample accumulation and history validation, and discuss algorithmic and implementation options. As temporal upsampling is becoming increasingly relevant to today's game engines, we propose an extension of our TAA formulation to cover a variety of temporal upsampling techniques. Despite the popularity of TAA, there are still significant unresolved technical challenges that affect image quality in many scenarios. We provide an in-depth analysis of these challenges, and review existing techniques for improvements. Finally, we summarize popular algorithms and topics that are closely related to TAA. We believe the rapid advances in those areas may either benefit from or feedback into TAA research and development.},
+  langid = {english}
+}

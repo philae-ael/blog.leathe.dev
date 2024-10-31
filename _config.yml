@@ -21,11 +21,15 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-katex
+- jekyll-scholar
 
 collections:
   articles:
     output: true
     permalink: /:collection/:path
+
+exclude:
+  - update-biblio.sh
 
 feed:
   path: "/feed.xml"
