@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Fira+Code:wght@400&family=Kanit:wght@500&display=swap');
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url(/assets/fonts/AtkinsonHyperlegible-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url(/assets/fonts/Kanit-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url(/assets/fonts/FiraCode-Regular.ttf) format("truetype");
+}
+
 
 $base-font-family: "Atkinson Hyperlegible", sans-serif;
 $base-font-size:   18px;
