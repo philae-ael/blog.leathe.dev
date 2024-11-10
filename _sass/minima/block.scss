@@ -1,9 +1,54 @@
+blockquote.todo {
+  border-color: #0CE;
+  padding: 10px;
+  font-style: normal;
+  background-color: #09B;
+  color: #212121;
+
+  p {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  > :first-child::before {
+    font-size: 24px;
+    font-weight: bolder;
+    display: block;
+    content: 'TODO';
+  }
+}
+
+blockquote.todo h1,
+blockquote.todo h2,
+blockquote.todo h3,
+blockquote.todo h4,
+blockquote.todo h5,
+blockquote.todo h6 {
+  color: #CCC;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+
 blockquote.info {
-    border-color: #CCC;
-    background-color: #212121;
-    color: #8b949e;
-    padding: 10px;
-    font-style: normal;
+  border-color: #CCC;
+  background-color: #212121;
+  color: #8b949e;
+  padding: 10px;
+  font-style: normal;
+
+
+  p {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  > :first-child::before {
+    font-size: 24px;
+    font-weight: bolder;
+    display: block;
+    content: 'Info';
+  }
 }
 
 blockquote.info h1,
@@ -12,16 +57,16 @@ blockquote.info h3,
 blockquote.info h4,
 blockquote.info h5,
 blockquote.info h6 {
-    color: #CCC;
-    margin: 0px;
-    margin-bottom: 5px;
+  color: #CCC;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 blockquote.info p {
-    margin-bottom: 0px;
-    font-size: 16px;
+  margin-bottom: 0px;
+  font-size: 16px;
 }
 
 pre:has(code.language-mermaid[data-processed="true"]) {
-    text-align: center;
+  text-align: center;
 }
