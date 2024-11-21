@@ -37,6 +37,10 @@ See: [DMA](https://en.wikipedia.org/wiki/Direct_memory_access), [Bus Mastering](
 -> I have 12 processors, (well 6*2 thx to hyperthreading) i should use all of them!
 -> Some things are long lived and should not block a frame to be rendered (eg. loading of a file)
 
+## Defered reclamation
+In vulkan code, rather than having blocking, a coroutine could wait for a fence / timeline semaphore.
+Exemple: deletion of old ressource duting swapchain recreation
+
 ## Control Flow
 A frame is a graph!
 Each node a task.

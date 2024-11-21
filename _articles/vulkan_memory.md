@@ -9,6 +9,8 @@ layout: post
 ## Motivation
 Understand how memory works under Vulkan. This also allows for better memory management.
 
+## Exploration
+
 Storage -> Memory -> Decompression -> GPU
 
 Building an asset pipeline maybe ?
@@ -132,6 +134,7 @@ And the header of the paper seems like
 I could also chose a given format and use that
 Idk
 
+### Direct Storage is a SCAM?!
 
 Direct Storage seems to be a big scam 
 - direct loading of data Storage -> GPU then decompression on GPU
@@ -166,7 +169,49 @@ So it's only a dumbed down version of libuv on which you glue a staging buffer
 
 Not sure of myself on that...
 
-## Exploration
+Still after much thinking i think it's quite a clever API
+
+### Building an IO thread?
+
+Let's do sthg similar (Akin a VkCmdStorageBuffer)
+Issue: Still need of multithreading!
+
+This time let's do it with a system threads + libuv? 
+
+async io libs: 
+- libuv 
+- libevent 
+- (boost) asio
+
+I'm choosing libuv bc it's in C and i guess that the compilation time will be lower
+(don't know i did not try)
+
+Then one day we will use a custom thready thing
+
+SO!
+Plan:
+1. Spawn IO thread on startup that will always be up
+2. rewrite `fs::process_modified_file_callbacks` to use the io thread as a warmup and to better understand how libuv works
+3. Create a small wrapper to send messages to the io thread?
+4. Create a `StorageQueue` that will be 
+    
+## So i did the first 2 steps 
+
+BUT !
+libuv is not really thread safe
+So spwaning task from another thread is not really doable *easily*
+
+Plans:
+- Keep doing that, but create a thread safe ring buffer to enqueue jobs
+- Rework the main loop so that i don't call uv_run every 6ms 
+
+Both should be done, one day or another, the second one seems easier.
+
+So i did the 2nd 
+
+It also improved timings! (because there no more waiting between camera movement and the rendering)
+
+## Other
 
 Maybe! 
 Exploration of every single line of code to upload data to a vulkan buffer 
